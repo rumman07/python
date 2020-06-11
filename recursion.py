@@ -1,3 +1,4 @@
+#!/usr/bin/python3.8
 def printTriangle(sideLength): 
     if sideLength < 1 :
         return
