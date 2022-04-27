@@ -1,3 +1,7 @@
+'''
+This function moves zeros to the end of the list.
+'''
+
 def move_zero(arr):
     count = 0 
     for num in arr:
