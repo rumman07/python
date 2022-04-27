@@ -21,3 +21,9 @@ with open('text.txt', mode='a') as line:
 z = open('text2.txt', 'w')
 z.write("Overwriting")
 z.close()
+
+#Appending to the same file
+k = open('text2.txt', 'a')
+k.write("\n")
+k.write("Appending text")
+k.close()
