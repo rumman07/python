@@ -1,0 +1,26 @@
+'''The following program reads from one text file and copies it
+exactly, line per line, to an output text file.'''
+
+# Open two files, one in read mode and one in write mode.
+inFile = open("inn.txt", "r")
+outFile = open("outt.txt", "w")
+
+#write a header to the output file, just so you can see the difference
+print("This is the output file", file = outFile)
+
+#write to the screen just to see that you still can, even when
+#you are using files for some of the output.
+print("We're ready to start reading the file")
+
+
+# The following "for" loop will iterate through the input file one
+# line at a time.  Each line that is read in is immediately written
+# to the output file.  The end = '' prevents an extra newline at the
+# end of each line.  Note that this is two apostrophes, not a quote mark.
+for line in inFile:
+    print(line, file = outFile, end = '')
+
+
+# Now clean up after yourself and close both files.
+inFile.close()
+outFile.close()

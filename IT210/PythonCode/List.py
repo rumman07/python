@@ -1,0 +1,62 @@
+'''This program demonstrates three different ways of getting data from a user and placing it in a Python list.
+#1The first loop assumes that the input values are in the range 0 throuhg 100
+(such as exam percentages) and uses a sentinel of a negative value to terminate the loop.
+#2The second loop first asks the user how many values there are and uses a counter to control the loop.
+#3The third loop asks the user each time if there is another value and uses the response to control the loop.
+In each case, the list contents are printed out both element-by-element and as an entire list.
+If you run this with the same basic input data values, you should get the same out put three times.'''
+
+'''This is the one that uses a sentinel.  We'll use a negative value for the
+sentinel.  We can't just assign to a list without first creating it.
+We'll create it as being initially empty and then use list concatenation (+)
+to add new items'''
+
+myList1 = []
+i = 0 #List index
+val = int(input("Enter number 1 through 100. Enter a negative to quit"))
+while val >= 0:
+    myList1 = myList1 + [val] #list concatenation
+    i = i + 1
+    val = int(input("Enter number 1 through 100. Enter a negative to quit"))
+#The list now has its values.  We'll print its contents in two ways
+#First the entire list all at once
+print("The entire first list is")
+print(myList1)
+print()
+#Now we'll print it one element at a time
+for i in range(0, len(myList1)):
+    print(myList1[i])
+
+'''This is the loop that asks the user how many values there are and uses
+that value to control the loop.  Again we'll create an initially empty
+list and concatenate each value to it in turn'''
+myList2 = []
+howMany = int(input("How many data values are there? "))
+for i in range(howMany):
+    val = int(input("Enter an input value: "))
+    myList2 = myList2 + [val]
+#Print the entire list all at once
+print("The entire second list is")
+print(myList2)
+#Now print it one element at a time
+for i in range(len(myList2)):
+    print(myList2[i])
+
+'''This is the loop that asks the user each time if there is a data
+value to be entered'''
+myList3 = []
+ans = input("Is there more data to enter (Y or N)?")
+while ans == "Y":
+    val = int(input("Enter an input value"))
+    myList3 = myList3 + [val]
+    ans = input("Is there more data to enter (Y or N)?")
+#Print the entire list all at once
+print("The entire third list is")
+print(myList3)
+#Now print it one element at a time
+for i in range(len(myList3)):
+    print(myList3[i])
+    
+
+    
+    

@@ -1,0 +1,9 @@
+in your lab excercise
+
+inFILE = open("inn.txt", r)
+outFile = open("outt,txt", w)
+
+you'll need to close all the files that you 
+opened. In general this is done at the end 
+of the program but not always. Consider the 
+case where you want to update an existing file. 

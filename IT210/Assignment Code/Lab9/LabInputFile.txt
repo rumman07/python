@@ -1,0 +1,10 @@
+Max Medium 12345678 58 152
+Jane Johnson 87654321 78 201
+Bill Bupkiss 23456789 29 29
+Nate Newby 98765432 0 0
+Harold Humphries 11223344 43 160
+Carol Cramer 22334455 102 400
+Alvin Adams 33445566 67 120
+Fred Frederick 44556677 81 250
+Phillip Parker 55667788 44 168
+Sam Spade 24681357 16 30
